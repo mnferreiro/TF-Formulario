@@ -1,0 +1,116 @@
+.ocultar {
+  visibility: hidden;
+}
+.mostrar {
+  visibility:visible;
+}
+body {     
+    background-color: hwb(0 61% 31%);
+    font-family: cursive;
+    color: #0022d2;
+}
+h1, h2{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#bienvenida, #reglasAdivi {
+  font-size: 30px;
+  color: rgb(38, 74, 141);
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+ }
+
+ #links {
+  align-items: center;   
+ }
+ #juegos {
+  margin-left: 150px;  
+ }
+ #reg {
+  margin-top: 50px;
+  border-radius: 20px;  
+  margin-left: 550px;  
+ }
+ .formulario {
+  align-items: center;
+  padding-left: 2%; 
+  padding-top: 5px;   
+}
+ .contenido {
+    border: 2px dashed ;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: rgb(229 215 185 / 98%);
+    color: #0022d2;
+    font-family: cursive;
+    width: 600px;
+    margin:auto
+  }   
+  input, select{
+    border-radius: 8pt;
+    padding-left: 5pt;
+    width: 200px;
+    margin-bottom: 20px;
+ }
+  select {
+    margin-left: 4pt;
+ }
+ #butHome {  
+  align-content: end;
+  justify-content: end;
+  margin-left: 90px;
+ }
+ 
+ #butJuego1, #butJuego2{
+  height: 150px;
+  width: 300px;
+  border-radius: 25px;  
+  align-content: center;
+  justify-content:space-between;
+  text-justify: newspaper;
+  margin-left: 100px;
+
+ }
+
+ #butRegistro {
+  align-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+ }
+
+
+ .error {
+  border-color: red;
+}  
+
+#errorPass {
+  padding-left: 20%;
+  color: #d61515;
+}
+label {
+  width: 150px;
+}
+
+#seleAdivi {
+  margin-top: 20px;
+  height:100px;
+  width:fit-content;
+  font-size: 20px;
+}
+
+.labelJuego {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+  
+#adivi {
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  text-justify: auto;
+}  
