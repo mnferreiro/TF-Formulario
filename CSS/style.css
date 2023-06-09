@@ -21,13 +21,27 @@ h1, h2{
   text-align: center;
   width: 100%;
   margin-top: 50px;
+  
+ }
+ #mensajeFinal {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: rgb(38, 74, 141);
+  text-align: center;
+  width: 100%;
  }
 
  #links {
   align-items: center;   
  }
  #juegos {
-  margin-left: 150px;  
+  margin-left: 190px;  
+ }
+ #butJuego1 {
+  background-color: #bb6a6a;
+ }
+ #butJuego2 {
+  background-color: #3ca13e;
  }
  #reg {
   margin-top: 50px;
@@ -59,9 +73,13 @@ h1, h2{
     margin-left: 4pt;
  }
  #butHome {  
-  align-content: end;
-  justify-content: end;
-  margin-left: 90px;
+  align-content:start;
+  justify-content: start;
+  margin-left: 0px;
+ }
+ #butRegistrar {
+  align-items: end;
+  margin-left: 80px;
  }
  
  #butJuego1, #butJuego2{
@@ -114,3 +132,81 @@ label {
   text-align: center;
   text-justify: auto;
 }  
+
+.alternativa {
+  display: none;
+}
+.adivi {
+  margin-left: 150px;
+  margin-right: 40px;
+}
+
+#reglas, #respuPreguntas {
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+#respuPreguntas {
+  color: #972525;
+  text-align: center;
+  font-size: 30px; 
+  margin-bottom: 30px;
+
+}
+
+.box {
+  background-color: #c08051;
+  color: #790450;
+  margin-left: 250px;
+  margin-right: 250px;
+  align-items: center;
+  border-radius: 40px;
+  padding: 40px;
+
+}
+.butPregu {
+  background-color: #3ca13e;
+  border-radius: 10px;
+}
+#respo0 {
+align-items: center;
+margin-left: 40%;
+margin-top: 25px;
+}
+
+#pregu1 {
+  position: absolute; 
+  z-index: 100;
+  margin-left: 30%;
+}
+
+#pregu2 {
+  position: absolute; 
+  z-index: 90;
+  margin-left: 30%
+}
+#pregu3 {
+  position: absolute; 
+  z-index: 80;
+  margin-left: 30%
+}
+
+#pregu4 {
+  position: absolute; 
+  z-index: 70;
+  margin-left: 30%
+}
+#pregu5 {
+  position: absolute; 
+  z-index: 60;
+  margin-left: 30% 
+}
+
+#reiniPregu, #inicio {
+  width:200px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+#noSeleccion {
+  margin-left: 870px;
+}

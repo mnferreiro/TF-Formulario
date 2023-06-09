@@ -5,50 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="fomulario.css">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Preguntas</title>
 </head>
 <header>
-    <h1>Juego de Adivinanzas</h1>    
+    <h1>Juego de Preguntas y Respuestas</h1>    
 </header>
 <body>
     
     <p id="reglasAdivi">
-        Hola <span id="nomJuga"></span> en este juego debes adivinar la respuesta correcta a una adivinanza, <br> ¡¡¡Te animas!!  Suerte
-    </p>
-    
-      <label class="labelJuego">Adivinanza</label>
-      <select id="seleAdivi" onchange="respuestas(event)">
-        <option value="">Seleccione una adivinanza</option>
-        <option value="1" name="La Letra S"><p>
-               <p>En cualquier día de la semana me veras,</p><br>
-               <p>Excepto en domingo</p><br>
-               <p>Que no me encontraras…</p>
-            </p>
-        </option>
-        <option value="2" name="El Elefante"><p>
-            Tiene famosa memoria, tiene olfato y dura piel, 
-            y las mayores narices que en el mundo puedas ver…
-            </p>
-        </option>
-        <option value="3" name="La Bicicleta"><p>
-            Tengo ruedas y pedales, 
-            cadenas y un manillar, 
-            te ahorras gasolina 
-            aunque te haga sudar…</p>
-        </option>         
-      </select>
-      <br><br><label class="labelJuego">Respuestas</label>
-      <div id="adivi1" class="ocultar">
-        <input type="checkbox" value="El Jardinero">El Jardinero<br>
-        <input type="checkbox" value="La Letra S">La Letra S<br>
-        <input type="checkbox" value="El Viento">El Viento
-      </div>
+        Hola <span id="nomJuga"></span> en este juego debes adivinar la respuesta correcta a cinco preguntas <br> ¡¡¡Te animas!!  Suerte
+    </p>  
+    <button id="respo0" class="butPregu btn btn-warning">Comenzar Juego</button>  
+    <div id="respuPreguntas" class="#"></div>
+
+<div id="pregu1" class="box ocultar">
+  <label class="pregu">Pregunta Nº 1</label>
+  <p>Cual es el club mas grande del mundo?</p>
+  <div id="adivi1" class="">
+    <input type="radio" name="res1" value="1">Real Madrid<br>
+    <input type="radio" name="res1" value="2">Barcelona<br>
+    <input type="radio" name="res1" value="3">Boca Juniors
+  </div>
+  <button id="respo1" class="butPregu">Responder</button>
+</div>
+<div id="pregu2" class="box ocultar">
+  <label class="pregu">Pregunta Nº 2</label>
+  <p>¿Cuál es el metal más caro del mundo?</p>
+  <div id="adivi1" class="">
+    <input type="radio" name="res2" value="1">El Oro<br>
+    <input type="radio" name="res2" value="3">El Rodio<br>
+    <input type="radio" name="res2" value="2">El Platino
+  </div>
+  <button id="respo2" class="butPregu">Responder</button>
+</div>
+<div id="pregu3" class="box ocultar">
+  <label class="pregu">Pregunta Nº 3</label>
+  <p>¿Quién pronunció la frase “solo sé que no sé nada”?</p>
+  <div id="adivi3" class="">
+    <input type="radio" name="res3" value="3">Socrates<br>
+    <input type="radio" name="res3" value="2">Platón<br>
+    <input type="radio" name="res3" value="1">Maradona
+  </div>
+  <button id="respo3" class="butPregu">Responder</button>
+</div>
+<div id="pregu4" class="box ocultar">
+  <label class="pregu">Pregunta Nº 4</label>
+  <p>¿Cuántos dientes tiene una persona adulta?</p>
+  <div id="adivi4" class="">
+    <input type="radio" name="res4" value="1">30<br>
+    <input type="radio" name="res4" value="3">32<br>
+    <input type="radio" name="res4" value="2">34
+  </div>
+  <button id="respo4" class="butPregu">Responder</button>
+</div>
+<div id="pregu5" class="box ocultar">
+  <label class="pregu">Pregunta Nº 5</label>
+  <p>¿Cuántos años duró la guerra de los 100 años?</p>
+  <div id="adivi5" class="">
+    <input type="radio" name="res5" value="1">100<br>
+    <input type="radio" name="res5" value="2">99<br>
+    <input type="radio" name="res5" value="3">116
+  </div>
+  <button id="respo5" class="butPregu">Responder</button>
+</div>
+<button id="reiniPregu" class="btn btn-warning">Reiniciar</button>
 </body>
-<br><br><br><a href="Index.html"><input type="button" value="Inicio"></a>
+<br><br><br><a href="Index.html"><input id="inicio" type="button" value="Inicio"></a>
+<br><span id="noSeleccion"></span>
 <footer>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="jquery-3.7.0.min.js"></script>
-    <script src="formulario.js" ></script>
+    <script src="JS/jquery-3.7.0.min.js"></script>
+    <script src="JS/index.js" ></script>
+    <script src="JS/preguntas.js" ></script>
 </footer>
 </html>
